@@ -73,6 +73,7 @@ Set-AzKeyVaultAccessPolicy -VaultName 'my-kv-01' `
 Add package references for the following packages:
 * Azure.Extensions.AspNetCore.Configuration.Secrets
 * Azure.Identity
+
 The X.509 certificate is managed by the Windows. The application calls AddAzureKeyVault with values from appsettings.json. The program.cs file should be like this:
 ``` csharp
 public static IHostBuilder CreateHostBuilder(string[] args) =>
